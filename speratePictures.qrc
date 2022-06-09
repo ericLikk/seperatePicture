@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/speratePictures">
+        <file>res/back.jpg</file>
+    </qresource>
+</RCC>

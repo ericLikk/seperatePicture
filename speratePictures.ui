@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>speratePicturesClass</class>
+ <widget class="QMainWindow" name="speratePicturesClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>921</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>切分图片</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="tabletTracking">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen"/>
+   <addaction name="actionsave"/>
+   <addaction name="actionrotate"/>
+   <addaction name="actiontif2png"/>
+   <addaction name="actionRandom"/>
+   <addaction name="actionselDir"/>
+   <addaction name="actionselDirRandom"/>
+   <addaction name="actionreName"/>
+   <addaction name="actionUnifiedPath"/>
+   <addaction name="actionactionRandomSel"/>
+   <addaction name="actionactionRotateSel"/>
+   <addaction name="actionDataAnalyse"/>
+   <addaction name="actionsp1w"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionopen">
+   <property name="text">
+    <string>open</string>
+   </property>
+   <property name="toolTip">
+    <string>打开一张文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>save</string>
+   </property>
+   <property name="toolTip">
+    <string>保存切割后的文件，按顺序切割</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionrotate">
+   <property name="text">
+    <string>rotate</string>
+   </property>
+   <property name="toolTip">
+    <string>旋转变化图像位置</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actiontif2png">
+   <property name="text">
+    <string>tif2png</string>
+   </property>
+   <property name="toolTip">
+    <string>tif转png</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionRandom">
+   <property name="text">
+    <string>random</string>
+   </property>
+   <property name="toolTip">
+    <string>随机切割若干张图片</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionselDir">
+   <property name="text">
+    <string>selDir</string>
+   </property>
+   <property name="toolTip">
+    <string>选择文件夹批量处理</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionselDirRandom">
+   <property name="text">
+    <string>selDirRandom</string>
+   </property>
+   <property name="toolTip">
+    <string>选择文件夹批量处理随机裁剪</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionreName">
+   <property name="text">
+    <string>reName</string>
+   </property>
+   <property name="toolTip">
+    <string>按照顺序重新排列名称</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionUnifiedPath">
+   <property name="text">
+    <string>UnifiedPath</string>
+   </property>
+   <property name="toolTip">
+    <string>统一路径，将xml里对应的路径修改为统一路径</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionactionRandomSel">
+   <property name="text">
+    <string>actionRandomSel</string>
+   </property>
+   <property name="toolTip">
+    <string>随机挑选指定数量图片</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F1</string>
+   </property>
+  </action>
+  <action name="actionactionRotateSel">
+   <property name="text">
+    <string>actionRotateSel</string>
+   </property>
+   <property name="toolTip">
+    <string>随机挑选一定数量图片转置处理</string>
+   </property>
+  </action>
+  <action name="actionDataAnalyse">
+   <property name="text">
+    <string>DataAnalyse</string>
+   </property>
+   <property name="toolTip">
+    <string>数据内容分析，统计数据中类型以及标签数目</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionsp1w">
+   <property name="text">
+    <string>sp1w</string>
+   </property>
+   <property name="toolTip">
+    <string>图片切割成1w*1w</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="speratePictures.qrc"/>
+ </resources>
+ <connections/>
+</ui>
